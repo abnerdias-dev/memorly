@@ -1,0 +1,114 @@
+.subscriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xl);
+  min-height: 100vh;
+  padding: var(--xl);
+}
+
+.subscriptionContainer a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: var(--weight-regular);
+}
+
+.subscriptionContainer a:hover {
+  text-decoration: underline;
+}
+
+.headerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: var(--medium);
+}
+
+.subForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small);
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputContainer:hover .eyeIcon {
+  visibility: visible;
+}
+
+.inputMessage {
+  font-weight: var(--weight-bold);
+  color: var(--darkerDanger);
+}
+
+.InputError {
+  color: var(--danger);
+}
+
+.inputSuccess {
+  color: var(--success);
+}
+
+.hidden {
+  opacity: 0;
+  display: block;
+  min-height: 1rem;
+}
+
+.visible {
+  opacity: 1;
+  display: block;
+  min-height: 1rem;
+}
+
+.eyeIcon {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(10%);
+  right: 12px;
+  cursor: pointer;
+ 
+}
+
+.inputCheckContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--small);
+}
+
+.checkInput {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  position: relative;
+
+  transition: all 0.1s;
+}
+
+.checkInput:checked {
+  background-color: var(--primary);
+}
+
+.checkInput:checked:after {
+  content: "\2714";
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+
+  color: white;
+}
+
+.btnsContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: var(--small);
+}

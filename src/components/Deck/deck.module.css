@@ -1,0 +1,98 @@
+.allDeck {
+  display: flex;
+  gap: var(--small);
+  align-items: center;
+  width: 100%;
+}
+
+.allDeck:hover .trashIcon {
+  visibility: visible;
+}
+
+.decks {
+  text-decoration: none;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: var(--xl);
+  margin-bottom: var(--large);
+  border: 3px solid var(--light-gray);
+  display: flex;
+  justify-content: start;
+  gap: var(--large);
+  align-items: center;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  overflow: hidden;
+  position: relative;
+  flex: 1;
+}
+
+.decks:active {
+  transform: scale(0.98);
+}
+
+.trashIcon {
+  width: 3%;
+  color: var(--darkerDanger);
+  cursor: pointer;
+  margin-bottom: 1%;
+  visibility: hidden;
+}
+
+.decks:hover .trashIcon {
+  visibility: visible;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-display);
+  flex-shrink: 0;
+}
+
+.deckInfo {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.deckTitle {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-lg);
+  font-weight: var(--weight-black);
+  color: var(--dark);
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+.deckMeta {
+  display: flex;
+  
+  font-size: var(--font-sm);
+  color: var(--gray);
+  font-weight: var(--weight-regular);
+}
+
+.deckProgress {
+  margin-top: 10px;
+}
+
+.progressContainer {
+  background-color: var(--light-gray);
+  height: var(--medium);
+  border-radius: var(--radius-sm);
+}
+
+.progress {
+  border-radius: var(--radius-sm);
+  height: 100%;
+  width: 0%;
+  background-color: var(--success);
+}

@@ -1,0 +1,50 @@
+.iconSelectorContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: var(--medium);
+  font-weight: var(--weight-regular);
+}
+
+.iconsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 48px);
+  width: 100%;
+  gap: var(--small);
+}
+
+.iconContainer {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+
+  overflow: hidden;
+  display: flex;
+  outline: 3px solid transparent;
+  border-radius: var(--radius-md);
+  transition: outline-color 0.05s ease;
+}
+
+.iconContainerSelected {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+
+  overflow: hidden;
+  display: flex;
+
+  border-radius: var(--radius-md);
+  outline: 3px solid var(--darkerSuccess);
+  outline-offset: -1.5px;
+}
+
+.iconContainer:hover {
+  outline-color: var(--darkerSuccess);
+  outline-offset: -1px;
+}
+
+.iconContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

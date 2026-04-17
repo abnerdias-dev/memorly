@@ -1,0 +1,70 @@
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: var(--xl);
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.streakBadge {
+  display: flex;
+  align-items: center;
+  gap: var(--small);
+  background: linear-gradient(135deg, var(--bgWarning), var(--bgWarningDark));
+  padding: var(--small) var(--large);
+  border-radius: var(--radius-lg);
+  border: var(--minimum) solid var(--warningBorder);
+}
+
+.streakIcon {
+  font-size: var(--font-xl);
+}
+
+.streakText {
+  font-weight: var(--weight-black);
+  color: var(--warningDark);
+  font-size: var(--font-base);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--medium);
+  margin: var(--xl) 0;
+}
+
+.chartContainer {
+  width: 100%;
+  background: var(--white);
+  padding: var(--xxl);
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--light-gray);
+}
+
+.chartWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 300px;
+}
+
+.chartItem {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.bar {
+  position: absolute;
+  background-color: var(--primary);
+  width: var(--medium);
+  border-radius: var(--radius-sm);
+  height: 90%;
+  bottom: var(--xl);
+  right: 50%;
+  transform: translateX(50%);
+}

@@ -1,0 +1,26 @@
+
+.emptyState {
+  text-align: center;
+  padding: var(--section) var(--xxl);
+
+  min-height: 300px;
+}
+
+.emptyIcon {
+  font-size: var(--font-display);
+  margin-bottom: var(--xl);
+  opacity: 0.3;
+}
+
+.emptyTitle {
+  font-size: var(--font-xxl);
+  font-weight: var(--weight-black);
+  color: var(--dark);
+  margin-bottom: var(--medium);
+}
+
+.emptyText {
+  font-size: var(--font-base);
+  color: var(--gray);
+  line-height: 1.5;
+}

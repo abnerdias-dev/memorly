@@ -1,0 +1,87 @@
+.creatorContainer {
+  display: flex;
+  flex-direction: column;
+  padding: var(--xxl);
+  gap: var(--medium);
+  min-height: 100vh;
+}
+
+.creatorHeader {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: var(--medium);
+  border-bottom: 2px solid var(--light-gray);
+  padding: var(--medium);
+}
+
+.btnBack {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.creatorForm {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small);
+  font-weight: var(--weight-regular);
+}
+
+.iconSelectorContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: var(--medium);
+  font-weight: var(--weight-regular);
+}
+
+.iconsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 48px);
+  width: 100%;
+  gap: var(--small);
+}
+
+.iconContainer {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+
+  overflow: hidden;
+  display: flex;
+  outline: 3px solid transparent;
+  border-radius: var(--radius-md);
+  transition: outline-color 0.05s ease;
+}
+
+.iconContainerSelected {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+
+  overflow: hidden;
+  display: flex;
+
+  border-radius: var(--radius-md);
+  outline: 3px solid var(--darkerSuccess);
+  outline-offset: -1.5px;
+}
+
+.iconContainer:hover {
+  outline-color: var(--darkerSuccess);
+  outline-offset: -1px;
+}
+
+.iconContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

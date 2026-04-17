@@ -1,0 +1,184 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small);
+  background: var(--white);
+  border-bottom: var(--minimum) solid var(--lightest-gray);
+  padding: var(--xxxl);
+}
+
+.headerInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appLogo {
+  font-size: var(--font-xxxl);
+  font-weight: var(--weight-extra-black);
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.streakBadge {
+  display: flex;
+  align-items: center;
+  gap: var(--small);
+  background: linear-gradient(135deg, var(--bgWarning), var(--bgWarningDark));
+  padding: var(--small) var(--large);
+  border-radius: var(--radius-lg);
+  border: var(--minimum) solid var(--warningBorder);
+}
+
+.streakIcon {
+  font-size: var(--font-xl);
+}
+
+.streakText {
+  font-weight: var(--weight-black);
+  color: var(--warningDark);
+  font-size: var(--font-base);
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  padding: var(--xl);
+}
+
+.mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homeLink {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.homeLink:hover {
+  text-decoration: underline;
+}
+
+.deckContainer {
+  padding: var(--xxxl);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--xl);
+  width: 100%;
+
+  overflow-y: auto;
+}
+
+.loadedDecks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small);
+}
+
+.decks {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: var(--xl);
+  margin-bottom: var(--large);
+  border: 3px solid var(--light-gray);
+  display: flex;
+  justify-content: start;
+  gap: var(--large);
+  align-items: center;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  overflow: hidden;
+}
+
+.decks:active {
+  transform: scale(0.98);
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-display);
+  flex-shrink: 0;
+}
+
+.deckIinfo {
+  flex: 1;
+}
+
+.deckTitle {
+  font-size: var(--font-lg);
+  font-weight: var(--weight-black);
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+
+.deckMeta {
+  font-size: var(--font-sm);
+  color: var(--gray);
+  font-weight: var(--weight-regular);
+}
+
+.deckProgress {
+  margin-top: 10px;
+}
+
+.progressContainer {
+  background-color: var(--light-gray);
+  height: var(--medium);
+  border-radius: var(--radius-sm);
+}
+
+.progress {
+  border-radius: var(--radius-sm);
+  height: 100%;
+  width: 20%;
+  background-color: var(--success);
+}
+
+.tipInfo {
+  width: 100%;
+  background-color: var(--bgPrimary);
+  border-radius: var(--radius-sm);
+  padding: var(--xl);
+  align-self: center;
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--section) var(--xxl);
+
+  min-height: 300px;
+}
+
+.emptyIcon {
+  font-size: var(--font-display);
+  margin-bottom: var(--xl);
+  opacity: 0.3;
+}
+
+.emptyTitle {
+  font-size: var(--font-xxl);
+  font-weight: var(--weight-black);
+  color: var(--dark);
+  margin-bottom: var(--medium);
+}
+
+.emptyText {
+  font-size: var(--font-base);
+  color: var(--gray);
+  line-height: 1.5;
+}

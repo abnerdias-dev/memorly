@@ -1,0 +1,55 @@
+.elementsContainer {
+  display: flex;
+  position: relative;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid var(--light-gray);
+  border-radius: var(--radius-xl);
+  padding: var(--xl);
+  transition: border 0.2s ease;
+  transition: transform 0.2s ease;
+  box-sizing: border-box;
+  width: 95%;
+}
+
+.cardContainer:hover {
+  transform: translateY(-1px);
+  border: 3px solid var(--primary);
+}
+
+.trashIcon {
+  width: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  cursor: pointer;
+  position: absolute;
+  visibility: hidden;
+}
+
+.elementsContainer:hover .trashIcon {
+  visibility: visible;
+}
+
+.elementsContainer:hover .trashIcon:hover {
+  color: var(--darkerDanger);
+}
+
+.elementsContainer:hover .trashIcon:active {
+  color: var(--danger);
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small);
+  font-weight: var(--weight-regular);
+}
+
+.cardAnswer {
+  color: var(--gray);
+}
+

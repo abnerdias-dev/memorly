@@ -1,0 +1,38 @@
+.creatorContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.creatorHeader {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: var(--xl);
+  gap: var(--small);
+  border-bottom: 3px solid var(--light-gray);
+}
+
+.headerInfo {
+  color: var(--gray);
+  font-weight: var(--weight-regular);
+}
+
+.createForm {
+  display: flex;
+  flex-direction: column;
+  padding: var(--xl);
+  gap: var(--small);
+}
+
+.btnsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: var(--xl);
+  gap: var(--small);
+}
+
+.btnPair {
+  display: flex;
+  justify-content: center;
+  gap: var(--small);
+}

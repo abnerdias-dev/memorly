@@ -1,0 +1,149 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 18px 32px;
+  border-radius: 16px;
+  font-weight: 800;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+/* ── PRIMARY ───────────────────────── */
+
+.btnPrimary {
+  background: var(--gradient-success);
+  color: var(--white);
+  border-bottom: 5px solid var(--darkSuccess);
+}
+
+.btnPrimary:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--lightSuccess),
+    var(--lightshadowSuccess)
+  );
+  transform: translateY(-2px);
+}
+
+.btnPrimary:active {
+  transform: translateY(1px);
+  border-bottom: 5px solid var(--darkSuccess);
+}
+
+/* ── SECONDARY ───────────────────────── */
+
+.btnSecondary {
+  background: linear-gradient(to bottom, var(--primary), var(--primaryShadow));
+  color: var(--white);
+  border-bottom: 5px solid var(--primaryDarker);
+}
+
+.btnSecondary:hover {
+  background: linear-gradient(to bottom, var(--primary), var(--primaryShadow));
+  transform: translateY(-1px);
+}
+
+.btnSecondary:active {
+  transform: translateY(1px);
+}
+
+/* ── OUTLINE ───────────────────────── */
+
+.btnOutline {
+  background: var(--white);
+  color: var(--primary);
+  border: 3px solid var(--light-gray);
+  border-bottom: 5px solid var(--light-gray);
+  font-weight: 700;
+}
+
+.btnOutline:hover {
+  background: var(--off-white);
+  border-color: var(--primary);
+}
+
+.btnOutline:active {
+  border: 3px solid var(--light-gray);
+  border-bottom: 5px solid var(--light-gray);
+}
+
+.btnOutlineDanger {
+  background: var(--white);
+  color: var(--danger);
+  border: 3px solid var(--light-gray);
+  border-bottom: 5px solid var(--light-gray);
+  font-weight: 700;
+}
+
+.btnOutlineDanger:hover {
+  background: var(--off-white);
+  border-color: var(--danger);
+}
+
+/* ── DANGER ───────────────────────── */
+
+.btnDanger {
+  background: linear-gradient(to bottom, var(--danger), var(--darkerDanger));
+  color: var(--white);
+  border-bottom: 5px solid var(--dangerBorder);
+}
+
+.btnDanger:active {
+  background: linear-gradient(to bottom, var(--danger), var(--lightDanger));
+   border-bottom: 5px solid var(--danger);
+}
+
+/* ── DISABLED ───────────────────────── */
+
+.btnDisabled {
+  background: var(--light-gray);
+  color: var(--gray);
+  border-bottom: 5px solid var(--darkergray);
+  cursor: not-allowed;
+}
+
+/* ── SIZE ───────────────────────── */
+
+.btnSmall {
+  padding: 12px 24px;
+  font-size: 15px;
+  border-radius: 12px;
+}
+
+.fab {
+  position: fixed;
+  bottom: 90px;
+  right: var(--xl);
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-circle);
+  background: var(--gradient-success);
+  box-shadow: var(--shadow-success);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-title);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  transition: all var(--transition-base);
+}
+
+.fab span {
+  display: block;
+  transform: translateY(-2px);
+}
+
+.fab:hover {
+  transform: scale(1.1);
+}
+
+.fab:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,26 @@
+.cardStatus {
+  background-color: var(--light-gray);
+  padding: var(--small) var(--large);
+  border-radius: var(--radius-lg);
+  font-weight: var(--weight-bold);
+}
+
+.newCard {
+  color: var(--primary);
+  background-color: var(--bgPrimary);
+}
+
+.learningCard {
+  color: var(--warning);
+  background-color: var(--bgWarningDark);
+}
+
+.reviewCard {
+  color: var(--danger);
+  background-color: var(--bgDanger);
+}
+
+.masteredCard {
+  color: var(--success);
+  background-color: var(--bgSuccess);
+}

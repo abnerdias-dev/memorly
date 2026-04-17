@@ -1,0 +1,29 @@
+.statCard {
+  background: var(--white);
+  padding: var(--xxl);
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--light-gray);
+  text-align: center;
+}
+
+.statNumber {
+  font-size: var(--font-display);
+  font-weight: var(--weight-extra-black);
+  color: var(--dark);
+  margin-bottom: var(--smallest);
+}
+
+.statLabel {
+  font-size: var(--font-sm);
+  color: var(--gray);
+  font-weight: var(--weight-bold);
+}
+
+.success {
+  background: var(--white);
+  padding: var(--xxl);
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--lightSuccess);
+  text-align: center;
+}
+

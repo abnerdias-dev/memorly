@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: var(--large);
+    padding: var(--xl);
+}
+
+.headerTitle {
+    font-size: 2rem;
+    font-weight: var(--weight-bold);
+}
+
+.deckContainer {
+    padding: var(--xl);
+}

@@ -1,0 +1,50 @@
+.deckUiContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.deckUiContainer a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: var(--weight-regular);
+}
+
+.deckUiContainer a:hover {
+  text-decoration: underline;
+}
+
+.deckHeaderContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--smallest);
+  padding: var(--xl);
+}
+
+.deckInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small);
+  padding: var(--large);
+  border-bottom: 3px solid var(--light-gray);
+}
+
+.deckFlashcardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--large);
+  padding: var(--xl);
+  min-height: 400px;
+}
+
+.flashcardsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--smallest);
+}

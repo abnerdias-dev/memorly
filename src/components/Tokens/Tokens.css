@@ -1,0 +1,136 @@
+:root {
+  /* ── Colors ─────────────────────────────────────────────── */
+  --success: #58cc02;
+  --mostDarkSuccess: #2d6a2b;
+  --darkerSuccess: #4cad02;
+  --darkSuccess: #46a302;
+  --lightSuccess: #61e002;
+  --lightshadowSuccess: #52bd02;
+  --bgSuccess: #ddf4dd;
+  --bgSuccessDark: #c3ecc3;
+
+  --light-primary: #e0f2fe;
+  --primary: #1cb0f6;
+  --primaryShadow: #1899d6;
+  --primaryDarker: #1585c0;
+  --bgPrimary: #e0f2fe;
+
+  --lightDanger: #ff4b4b;
+  --danger: #ff4b4b;
+  --darkerDanger: #ea3232;
+  --dangerBorder: #cc2626;
+  --bgDanger: #ffe5e5;
+
+  --purple: #ce82ff;
+  --purpleDark: #9333ea;
+  --bgPurple: #f3e8ff;
+
+  --warning: #ffb800;
+  --warningDark: #ff9600;
+  --bgWarning: #fff4e5;
+  --bgWarningDark: #ffe8cc;
+  --warningBorder: #ffd89b;
+
+  --gold: #ffd700;
+  --goldDark: #ffa500;
+
+  --dark: #3c3c3c;
+  --darkSecondary: #4b4b4b;
+
+  --gray: #afafaf;
+  --medium-gray: #a8afb9;
+  --darkergray: #d0d0d0;
+  --light-gray: #e5e5e5;
+  --lightest-gray: #f0f0f0;
+  --off-white: #f7f7f7;
+  --white: #ffffff;
+
+  /* ── Width ─────────────────────────────────────────────── */
+
+  --smallW: 300px;
+  --mediumW: 350px;
+  --max: 500px;
+
+  /* ── Spacing ─────────────────────────────────────────────── */
+  --minimum: 2px;
+  --smallest: 4px;
+  --small: 8px;
+  --medium: 12px;
+  --large: 16px;
+  --xl: 20px;
+  --xxl: 24px;
+  --xxxl: 32px;
+  --section: 40px;
+  --page: 50px;
+
+  /* ── Border Radius ───────────────────────────────────────── */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-xxl: 24px;
+  --radius-pill: 9999px;
+  --radius-circle: 50%;
+
+  /* ── Typography ──────────────────────────────────────────── */
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-base: 16px;
+  --font-md: 17px;
+  --font-lg: 18px;
+  --font-xl: 20px;
+  --font-xxl: 24px;
+  --font-xxxl: 28px;
+  --font-title: 32px;
+  --font-display: 36px;
+
+  --weight-regular: 600;
+  --weight-bold: 700;
+  --weight-black: 800;
+  --weight-extra-black: 900;
+
+  /* ── Shadows ─────────────────────────────────────────────── */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 10px 40px rgba(0, 0, 0, 0.15);
+  --shadow-success: 0 8px 24px rgba(88, 204, 2, 0.4);
+  --shadow-primary: 0 0 0 3px rgba(28, 176, 246, 0.1);
+
+  /* ── Transitions ─────────────────────────────────────────── */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+  --transition-flip: 0.6s ease;
+
+  /* ── Gradients ───────────────────────────────────────────── */
+  --gradient-success: linear-gradient(
+    135deg,
+    var(--success),
+    var(--darkSuccess)
+  );
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--primaryDarker)
+  );
+  --gradient-danger: linear-gradient(
+    135deg,
+    var(--danger),
+    var(--dangerBorder)
+  );
+  --gradient-purple: linear-gradient(135deg, var(--purple), var(--purpleDark));
+  --gradient-warning: linear-gradient(
+    135deg,
+    var(--warning),
+    var(--warningDark)
+  );
+  --gradient-gold: linear-gradient(135deg, var(--gold), var(--goldDark));
+  --gradient-brand: linear-gradient(135deg, var(--success), var(--primary));
+  --gradient-page: linear-gradient(135deg, var(--white) 0%, #f7f9fc 100%);
+  --gradient-progress: linear-gradient(
+    to right,
+    var(--success),
+    var(--darkSuccess)
+  );
+}
